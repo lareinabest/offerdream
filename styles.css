@@ -2,49 +2,74 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     background: #fff;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #FFC0CB; /* 嫩粉色背景 */
-    color: white;
+    background: #FFC0CB; /* 主题色彩 */
+    color: #fff;
     padding: 20px 10px;
     text-align: center;
 }
 
 nav {
-    background-color: #FFD6E0; /* 深嫩粉色 */
-    padding: 10px 0;
+    background: #FFD6E0;
     text-align: center;
+    padding: 10px 0;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 12px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
 
 .container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
 .footer {
-    background-color: #FFC0CB;
+    background: #FFC0CB;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-h1, h2, h3 {
-    color: #333;
+section {
+    margin-bottom: 20px;
 }
 
-p {
-    line-height: 1.6;
+.service, .school, .case-study, .testimonial {
+    background: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #FFC0CB;
+}
+
+@media (min-width: 600px) {
+    .service, .school, .case-study, .testimonial {
+        display: inline-block;
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 599px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
