@@ -3,28 +3,26 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #FFF0F5; /* 更浅的嫩粉色 */
+    background: #FDEEF4; /* 更浅的粉红色背景 */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background: url('https://via.placeholder.com/1500x400/FFC0CB/FFFFFF?text=Welcome+to+OfferDream'); /* 示例背景图 */
-    color: white;
-    padding: 50px 20px;
+    background-color: #FADADD; /* 柔和的粉红色 */
+    color: #fff;
+    padding: 20px 10px;
     text-align: center;
-    background-size: cover;
 }
 
 nav {
-    background: #FFD6E0;
+    background-color: #FADADD; /* 同上，为了统一风格 */
     padding: 10px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 nav a {
-    color: #fff;
+    color: #633974; /* 深紫色文字，提供对比 */
     margin: 0 15px;
     text-decoration: none;
     font-size: 16px;
@@ -38,39 +36,32 @@ nav a {
 }
 
 .footer {
-    background: #FFD6E0;
-    color: white;
+    background-color: #FADADD;
+    color: #633974; /* 深紫色文字 */
     text-align: center;
     padding: 15px 0;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #633974;
 }
 
-p {
-    margin: 0 0 10px 0;
+p, li {
+    color: #333; /* 暗灰色文字 */
     line-height: 1.8;
 }
 
 .service, .news-item, .testimonial, .contact-info {
     background: #FFF;
-    border: 1px solid #FFD6E0;
+    border: 1px solid #FADADD;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.contact-info a {
-    color: #FF1493;
+.contact-info a, .social-links a {
+    color: #C71585; /* 亮紫色 */
     text-decoration: none;
-}
-
-.social-links a {
-    margin: 0 10px;
-    color: #FF1493;
-    font-size: 24px;
 }
 
 @media (min-width: 600px) {
@@ -87,4 +78,3 @@ p {
         margin: 10px 0;
     }
 }
-
