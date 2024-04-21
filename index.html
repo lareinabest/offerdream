@@ -1,69 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to OfferDream</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif; /* 使用Google字体 */
-            background: #FFEFF7; /* 浅粉红背景 */
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to OfferDream</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background: #fff;
+        color: #333;
+    }
 
-        .header, .footer {
-            background-color: #FFC0CB; /* 嫩粉色 */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
+    header {
+        background-image: url('https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
 
-        .content {
-            padding: 20px 15px;
-            text-align: center;
-        }
+    nav {
+        background-color: #FFC0CB;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
 
-        nav {
-            background: #FFD6E0; /* 较深一点的嫩粉色 */
-            padding: 10px 0;
-            text-align: center;
-        }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
+    .container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
 
-        h1, h2 {
-            color: #333;
-        }
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-        p {
-            line-height: 1.6;
-        }
-    </style>
+    .service {
+        background: #FFEFF7;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 30%;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: #FFC0CB;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+</style>
 </head>
 <body>
-<div class="header">
+<header>
     <h1>Welcome to OfferDream</h1>
-    <p>Your dream to studying abroad starts here!</p>
-</div>
+    <p>Your gateway to studying abroad</p>
+</header>
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="contact.html">Contact Us</a>
 </nav>
-<div class="content">
-    <h2>Our Services</h2>
-    <p>We offer comprehensive services for students aiming to study abroad, including application guidance, visa assistance, and pre-departure briefings.</p>
+<div class="container">
+    <section class="services">
+        <div class="service">
+            <h2>Undergraduate</h2>
+            <p>Guidance through every step of your undergraduate application.</p>
+        </div>
+        <div class="service">
+            <h2>Postgraduate</h2>
+            <p>Expert advice for your master's or PhD applications.</p>
+        </div>
+        <div class="service">
+            <h2>Visa Assistance</h2>
+            <p>Complete help with visa procedures and documentation.</p>
+        </div>
+    </section>
 </div>
-<div class="footer">
+<footer class="footer">
     <p>Copyright © 2024 OfferDream</p>
-</div>
+</footer>
 </body>
 </html>
