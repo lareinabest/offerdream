@@ -2,28 +2,30 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #FFF0F5; /* 更浅的嫩粉色 */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background: #FFC0CB; /* 主题色彩 */
-    color: #fff;
-    padding: 20px 10px;
+    background: url('https://via.placeholder.com/1500x400/FFC0CB/FFFFFF?text=Welcome+to+OfferDream'); /* 示例背景图 */
+    color: white;
+    padding: 50px 20px;
     text-align: center;
+    background-size: cover;
 }
 
 nav {
     background: #FFD6E0;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 nav a {
-    color: white;
-    margin: 0 12px;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -36,31 +38,43 @@ nav a {
 }
 
 .footer {
-    background: #FFC0CB;
+    background: #FFD6E0;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-section {
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: #333;
 }
 
-.service, .school, .case-study, .testimonial {
-    background: #f8f8f8;
-    border: 1px solid #e7e7e7;
+p {
+    margin: 0 0 10px 0;
+    line-height: 1.8;
+}
+
+.service, .news-item, .testimonial, .contact-info {
+    background: #FFF;
+    border: 1px solid #FFD6E0;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.contact-info a {
+    color: #FF1493;
+    text-decoration: none;
+}
+
 .social-links a {
     margin: 0 10px;
-    color: #FFC0CB;
+    color: #FF1493;
+    font-size: 24px;
 }
 
 @media (min-width: 600px) {
-    .service, .school, .case-study, .testimonial {
+    .service, .news-item, .testimonial {
         display: inline-block;
         width: 48%;
         margin: 1%;
@@ -73,3 +87,4 @@ section {
         margin: 10px 0;
     }
 }
+
