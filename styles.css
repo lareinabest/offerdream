@@ -10,15 +10,16 @@ body, html {
 
 header {
     background-color: #FADADD; /* 柔和的粉红色 */
-    color: #fff;
-    padding: 20px 10px;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #FADADD; /* 同上，为了统一风格 */
+    background-color: #FADADD;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 nav a {
@@ -37,7 +38,7 @@ nav a {
 
 .footer {
     background-color: #FADADD;
-    color: #633974; /* 深紫色文字 */
+    color: white;
     text-align: center;
     padding: 15px 0;
 }
@@ -46,17 +47,13 @@ h1, h2, h3 {
     color: #633974;
 }
 
-p, li {
-    color: #333; /* 暗灰色文字 */
-    line-height: 1.8;
-}
-
 .service, .news-item, .testimonial, .contact-info {
     background: #FFF;
-    border: 1px solid #FADADD;
+    border: 1px solid #FFD6E0;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
+    text-align: center; /* Ensuring content is centered */
 }
 
 .contact-info a, .social-links a {
@@ -64,17 +61,23 @@ p, li {
     text-decoration: none;
 }
 
+.social-links a {
+    display: inline-block; /* Align icons horizontally */
+    margin: 0 10px;
+}
+
 @media (min-width: 600px) {
     .service, .news-item, .testimonial {
         display: inline-block;
-        width: 48%;
+        width: 48%; /* Adjust width for symmetry */
         margin: 1%;
+        vertical-align: top; /* Align tops of blocks */
     }
 }
 
 @media (max-width: 599px) {
     nav a {
-        display: block;
+        display: block; /* Stack nav items under each other in mobile */
         margin: 10px 0;
     }
 }
